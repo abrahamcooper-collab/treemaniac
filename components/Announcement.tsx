@@ -24,7 +24,8 @@ export default function Announcement() {
 				<div
 					className="relative overflow-visible rounded-2xl px-8 sm:px-14 pt-10 pb-8 text-center"
 					style={{
-						background: "linear-gradient(135deg, #22C55E 0%, #34d399 40%, #6ee7b7 100%)",
+						background:
+							"linear-gradient(135deg, #22C55E 0%, #34d399 40%, #6ee7b7 100%)",
 						boxShadow: "0 4px 30px rgba(34,197,94,0.2)",
 					}}
 				>
@@ -47,7 +48,9 @@ export default function Announcement() {
 						className="text-white font-medium leading-relaxed max-w-xl mx-auto"
 						style={{ fontSize: "clamp(0.95rem, 2.5vw, 1.25rem)" }}
 					>
-						We&apos;re proudly serving Fresno &amp; the Central Valley — providing professional tree removal, trimming, and emergency services to keep your property safe and beautiful!
+						We&apos;re proudly serving Fresno &amp; the Central Valley —
+						providing professional tree removal, trimming, and emergency
+						services to keep your property safe and beautiful!
 					</p>
 				</div>
 
@@ -58,6 +61,7 @@ export default function Announcement() {
 						alt="Tree Maniac mascot"
 						width={160}
 						height={200}
+						style={{ width: "auto", height: "auto" }}
 						className="object-contain drop-shadow-xl"
 					/>
 				</div>
