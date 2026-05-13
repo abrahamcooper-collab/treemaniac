@@ -17,7 +17,10 @@ export default function HeroSection() {
 			{/* Background image */}
 			<div
 				className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-				style={{ backgroundImage: "url('/services/lot-and-land-clearing/IMG_7100.JPEG')" }}
+				style={{
+					backgroundImage:
+						"url('/services/lot-and-land-clearing/IMG_7100.JPEG')",
+				}}
 			/>
 			{/* Dark overlay — lighter on right to let image show */}
 			<div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/45 to-black/25" />
@@ -45,7 +48,7 @@ export default function HeroSection() {
 					<div className="mt-8 flex flex-wrap gap-4 animate-fadeInLeft delay-300">
 						<a
 							href="tel:+15593695748"
-							className="inline-flex items-center gap-2 bg-forest-green hover:bg-green-800 text-white font-bold px-7 py-4 rounded-full text-base transition-colors shadow-lg"
+							className="inline-flex items-center gap-2 bg-green-gradient hover:opacity-90 text-white font-bold px-7 py-4 rounded-full text-base transition-colors shadow-lg border-none"
 						>
 							<svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
 								<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />

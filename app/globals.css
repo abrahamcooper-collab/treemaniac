@@ -198,6 +198,11 @@ body {
 		box-shadow 0.3s ease;
 }
 
+.bg-green-gradient {
+	background: linear-gradient(135deg, #22c55e 0%, #1b6b2a 50%, #0d0d0d 100%);
+	color: #fff;
+}
+
 .service-card:hover {
 	transform: translateY(-8px);
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -306,7 +311,7 @@ body {
 }
 
 .cta-banner-gradient {
-	background: linear-gradient(135deg, #1b6b2a 0%, #0d0d0d 100%);
+	background: linear-gradient(135deg, #22c55e 0%, #1b6b2a 50%, #0d0d0d 100%);
 }
 
 .footer-gradient {

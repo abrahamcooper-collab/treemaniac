@@ -24,11 +24,7 @@ const quickLinks = [
 
 export default function Footer() {
 	return (
-		<footer
-			style={{
-				background: "linear-gradient(180deg, #0f1f0f 0%, #0D0D0D 100%)",
-			}}
-		>
+		<footer className="bg-green-gradient">
 			<div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 					{/* Col 1 — Logo + info + socials */}

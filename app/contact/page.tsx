@@ -22,7 +22,8 @@ export default function ContactPage() {
 			<section
 				className="relative pt-40 pb-20 px-6"
 				style={{
-					background: "linear-gradient(135deg, #1B6B2A 0%, #0D0D0D 100%)",
+					background:
+						"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
 				}}
 			>
 				<div className="max-w-4xl mx-auto">

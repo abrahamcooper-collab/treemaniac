@@ -23,7 +23,7 @@ export default function AboutSection() {
 				{/* Left — image collage + stat badge */}
 				<div className="relative w-full lg:w-1/2 shrink-0 flex justify-center py-10 lg:py-0">
 					{/* Decorative background shape */}
-					<div className="absolute top-4 left-4 w-[80%] h-full bg-forest-green opacity-10 rounded-[3rem] -z-10"></div>
+					<div className="absolute top-4 left-4 w-[80%] h-full bg-green-gradient opacity-20 rounded-[3rem] -z-10"></div>
 
 					<div className="relative w-full max-w-[480px]">
 						{/* Main Image */}

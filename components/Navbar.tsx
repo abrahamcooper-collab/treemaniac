@@ -160,7 +160,7 @@ export default function Navbar() {
 							href="tel:+15593695748"
 							className="flex items-center gap-2 text-sm"
 						>
-							<div className="w-9 h-9 rounded-full bg-forest-green flex items-center justify-center shrink-0">
+							<div className="w-9 h-9 rounded-full bg-green-gradient flex items-center justify-center shrink-0">
 								<svg
 									className="w-4 h-4 text-white"
 									fill="currentColor"
@@ -180,7 +180,7 @@ export default function Navbar() {
 						</a>
 						<Link
 							href="/contact"
-							className="bg-forest-green hover:bg-green-800 text-white font-bold text-sm px-5 py-3 rounded-full transition-colors whitespace-nowrap"
+							className="bg-green-gradient hover:opacity-90 text-white font-bold text-sm px-5 py-3 rounded-full transition-opacity whitespace-nowrap border-none"
 						>
 							Get a Free Quote
 						</Link>
@@ -227,18 +227,35 @@ export default function Navbar() {
 					href="tel:+15593695748"
 					className="flex items-center gap-1.5 text-white text-xs font-medium hover:text-green-300 transition-colors"
 				>
-					<svg className="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+					<svg
+						className="w-3.5 h-3.5 shrink-0"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+					>
 						<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />
 					</svg>
 					+1 (559) 369-5748
 				</a>
-				<span className="w-px h-3.5" style={{ backgroundColor: "rgba(255,255,255,0.25)" }} />
+				<span
+					className="w-px h-3.5"
+					style={{ backgroundColor: "rgba(255,255,255,0.25)" }}
+				/>
 				<a
 					href="mailto:treemaniac23@gmail.com"
 					className="flex items-center gap-1.5 text-white text-xs font-medium hover:text-green-300 transition-colors"
 				>
-					<svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-						<path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+					<svg
+						className="w-3.5 h-3.5 shrink-0"
+						fill="none"
+						stroke="currentColor"
+						strokeWidth={2}
+						viewBox="0 0 24 24"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+						/>
 					</svg>
 					treemaniac23@gmail.com
 				</a>
@@ -334,7 +351,7 @@ export default function Navbar() {
 					</a>
 					<Link
 						href="/contact"
-						className="bg-forest-green hover:bg-green-800 text-white font-bold text-center py-3 rounded-full transition-colors"
+						className="bg-green-gradient hover:opacity-90 text-white font-bold text-center py-3 rounded-full transition-opacity border-none block w-full"
 						onClick={() => setMobileOpen(false)}
 					>
 						Get a Free Quote

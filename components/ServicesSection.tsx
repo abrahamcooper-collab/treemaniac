@@ -36,13 +36,14 @@ const services = [
 	},
 ];
 
-
 export default function ServicesSection() {
 	return (
 		<>
 			{/* ── SERVICES ── */}
-			<section className="relative bg-white pt-20" style={{ paddingBottom: "140px" }}>
-
+			<section
+				className="relative bg-white pt-20"
+				style={{ paddingBottom: "140px" }}
+			>
 				{/* Badge + heading */}
 				<div className="text-center mb-12 px-6">
 					<div
@@ -62,10 +63,14 @@ export default function ServicesSection() {
 				{/* Cards 3 + 2 */}
 				<div className="max-w-5xl mx-auto px-6">
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-						{services.slice(0, 3).map((s) => <ServiceCard key={s.href} {...s} />)}
+						{services.slice(0, 3).map((s) => (
+							<ServiceCard key={s.href} {...s} />
+						))}
 					</div>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-						{services.slice(3).map((s) => <ServiceCard key={s.href} {...s} />)}
+						{services.slice(3).map((s) => (
+							<ServiceCard key={s.href} {...s} />
+						))}
 					</div>
 				</div>
 
@@ -88,20 +93,55 @@ export default function ServicesSection() {
 					</svg>
 				</div>
 			</section>
-
 		</>
 	);
 }
 
-function ServiceCard({ label, href, img, desc }: { label: string; href: string; img: string; desc: string }) {
+function ServiceCard({
+	label,
+	href,
+	img,
+	desc,
+}: {
+	label: string;
+	href: string;
+	img: string;
+	desc: string;
+}) {
 	return (
-		<Link href={href} className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-			<div className="relative w-full h-44 overflow-hidden">
-				<Image src={img} alt={label} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+		<Link
+			href={href}
+			className="group block rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border-none relative text-center"
+			style={{
+				background:
+					"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+			}}
+		>
+			<div className="relative w-full h-48 overflow-hidden">
+				<Image
+					src={img}
+					alt={label}
+					fill
+					className="object-cover group-hover:scale-105 transition-transform duration-500"
+				/>
 			</div>
-			<div className="p-5">
-				<h3 className="font-tenor-sans font-bold text-gray-900 text-base mb-2">{label}</h3>
-				<p className="text-gray-500 text-xs leading-relaxed line-clamp-4">{desc}</p>
+			{/* Decorative blobs inside the card to match CTA */}
+			<div
+				className="absolute top-40 -left-10 w-32 h-32 rounded-full opacity-20 pointer-events-none"
+				style={{ background: "rgba(255,255,255,0.3)" }}
+			/>
+			<div
+				className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full opacity-15 pointer-events-none"
+				style={{ background: "rgba(255,255,255,0.2)" }}
+			/>
+
+			<div className="px-6 py-8 relative z-10">
+				<h3 className="font-tenor-sans font-bold text-white mb-4 leading-tight text-xl sm:text-2xl">
+					{label}
+				</h3>
+				<p className="text-white/90 text-sm leading-relaxed line-clamp-4">
+					{desc}
+				</p>
 			</div>
 		</Link>
 	);

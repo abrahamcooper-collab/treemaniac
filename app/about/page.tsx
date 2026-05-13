@@ -55,7 +55,8 @@ export default function AboutPage() {
 			<section
 				className="relative pt-40 pb-20 px-6"
 				style={{
-					background: "linear-gradient(135deg, #1B6B2A 0%, #0D0D0D 100%)",
+					background:
+						"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
 				}}
 			>
 				<div className="max-w-4xl mx-auto">
@@ -153,7 +154,7 @@ export default function AboutPage() {
 					{/* Left — image collage + stat badge */}
 					<div className="relative w-full lg:w-1/2 shrink-0 flex justify-center py-10 lg:py-0">
 						{/* Decorative background shape */}
-						<div className="absolute top-4 left-4 w-[80%] h-full bg-forest-green opacity-10 rounded-[3rem] -z-10"></div>
+						<div className="absolute top-4 left-4 w-[80%] h-full bg-green-gradient opacity-20 rounded-[3rem] -z-10"></div>
 
 						<div className="relative w-full max-w-[480px]">
 							{/* Main Image */}
