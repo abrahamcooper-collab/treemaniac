@@ -72,7 +72,7 @@ export default function ServicePageTemplate({
 						<a
 							href="tel:+15593695748"
 							className="inline-block bg-white font-bold text-sm px-8 py-3 rounded-full transition-colors hover:bg-green-50"
-							style={{ color: "#1B6B2A" }}
+							style={{ color: "#3d5a0e" }}
 						>
 							Get Instant Price
 						</a>
@@ -81,8 +81,8 @@ export default function ServicePageTemplate({
 			</section>
 
 			{/* Main content */}
-			<section className="bg-white py-16 px-6">
-				<div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
+			<section className="py-16 px-6">
+				<div className="max-w-6xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-14 lg:px-14 flex flex-col lg:flex-row gap-12">
 
 					{/* Left — main content */}
 					<div className="flex-1 min-w-0">
@@ -98,7 +98,7 @@ export default function ServicePageTemplate({
 						</div>
 
 						{/* Intro */}
-						<h2 className="font-tenor-sans font-bold mb-4" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", color: "#1B6B2A" }}>
+						<h2 className="font-tenor-sans font-bold mb-4" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", color: "#3d5a0e" }}>
 							Tree Maniac&apos;s {title}
 						</h2>
 						<p className="text-gray-600 leading-relaxed mb-8">{intro}</p>
@@ -113,7 +113,7 @@ export default function ServicePageTemplate({
 								<ul className="flex flex-col gap-2">
 									{importantNotes.map((note, i) => (
 										<li key={i} className="flex items-start gap-3 text-gray-600">
-											<span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: "#22C55E" }}>
+											<span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: "#8cb11c" }}>
 												<svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
 												</svg>
@@ -135,7 +135,7 @@ export default function ServicePageTemplate({
 						<ul className="flex flex-col gap-4">
 							{whyChoosePoints.map((p, i) => (
 								<li key={i} className="flex items-start gap-3">
-									<span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: "#22C55E" }}>
+									<span className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: "#8cb11c" }}>
 										<svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
 										</svg>
@@ -160,14 +160,14 @@ export default function ServicePageTemplate({
 											href={s.href}
 											className="flex items-center justify-between px-5 py-4 rounded-xl border text-sm font-medium transition-colors group"
 											style={{
-												borderColor: s.href === `/services/${slug}` ? "#22C55E" : "#e5e7eb",
+												borderColor: s.href === `/services/${slug}` ? "#8cb11c" : "#e5e7eb",
 												backgroundColor: s.href === `/services/${slug}` ? "#f0fdf4" : "white",
-												color: s.href === `/services/${slug}` ? "#1B6B2A" : "#374151",
+												color: s.href === `/services/${slug}` ? "#5a7510" : "#374151",
 											}}
 										>
 											<div className="flex items-center gap-3">
 												<span className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: "#f0fdf4" }}>
-													<svg className="w-4 h-4" fill="none" stroke="#22C55E" strokeWidth={1.8} viewBox="0 0 24 24">
+													<svg className="w-4 h-4" fill="none" stroke="#8cb11c" strokeWidth={1.8} viewBox="0 0 24 24">
 														<path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 0v9m0 0l3-3m-3 3l-3-3" />
 													</svg>
 												</span>
@@ -196,18 +196,18 @@ export default function ServicePageTemplate({
 							>
 								<div
 									className="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
-									style={{ backgroundColor: "#dcfce7" }}
+									style={{ backgroundColor: "#eef5d8" }}
 								>
-									<svg className="w-5 h-5" fill="#22C55E" viewBox="0 0 24 24">
+									<svg className="w-5 h-5" fill="#8cb11c" viewBox="0 0 24 24">
 										<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />
 									</svg>
 								</div>
-								<div className="border-l pl-3" style={{ borderColor: "#22C55E" }}>
+								<div className="border-l pl-3" style={{ borderColor: "#8cb11c" }}>
 									<p className="text-xs text-gray-500 font-medium mb-0.5">Need Help? Call Us Now</p>
 									<a
 										href="tel:+15593695748"
 										className="font-bold text-base transition-colors hover:opacity-80"
-										style={{ color: "#22C55E" }}
+										style={{ color: "#8cb11c" }}
 									>
 										(559) 369-5748
 									</a>
@@ -221,12 +221,12 @@ export default function ServicePageTemplate({
 			<FaqSection />
 
 			{/* CTA Banner */}
-			<section className="bg-white py-12 px-6">
+			<section className="py-12 px-6">
 				<div
 					className="relative max-w-4xl mx-auto overflow-hidden px-10 py-14 text-center"
 					style={{
 						borderRadius: "2.5rem",
-						background: "linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+						background: "linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)",
 					}}
 				>
 					<div className="absolute -top-10 -left-10 w-52 h-52 rounded-full opacity-20" style={{ background: "rgba(255,255,255,0.3)" }} />

@@ -23,7 +23,7 @@ export default function ContactPage() {
 				className="relative pt-40 pb-20 px-6"
 				style={{
 					background:
-						"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+						"linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)",
 				}}
 			>
 				<div className="max-w-4xl mx-auto">
@@ -55,8 +55,8 @@ export default function ContactPage() {
 			</section>
 
 			{/* Contact info cards */}
-			<section className="bg-white pt-16 pb-4 px-6">
-				<div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+			<section className="pt-16 pb-4 px-6">
+				<div className="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-10 lg:px-14 grid grid-cols-1 sm:grid-cols-3 gap-6">
 					{[
 						{
 							icon: (
@@ -130,7 +130,7 @@ export default function ContactPage() {
 						>
 							<div
 								className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 text-white"
-								style={{ backgroundColor: "#22C55E" }}
+								style={{ backgroundColor: "#8cb11c" }}
 							>
 								{item.icon}
 							</div>
@@ -148,13 +148,13 @@ export default function ContactPage() {
 			</section>
 
 			{/* Form + Map */}
-			<section className="bg-white py-16 px-6">
-				<div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-10">
+			<section className="py-16 px-6">
+				<div className="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-14 lg:px-14 flex flex-col lg:flex-row gap-10">
 					{/* Contact form */}
 					<div className="flex-1">
 						<div
 							className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-5 text-white font-bold text-xs uppercase tracking-widest"
-							style={{ backgroundColor: "#22C55E" }}
+							style={{ backgroundColor: "#8cb11c" }}
 						>
 							GET A FREE QUOTE <span>🌲</span>
 						</div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
 							className="font-tenor-sans font-bold mb-6"
 							style={{
 								fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-								color: "#1B6B2A",
+								color: "#3d5a0e",
 							}}
 						>
 							Send Us a Message
@@ -171,11 +171,11 @@ export default function ContactPage() {
 						{submitted ? (
 							<div
 								className="rounded-2xl p-10 text-center border"
-								style={{ borderColor: "#22C55E", backgroundColor: "#f0fdf4" }}
+								style={{ borderColor: "#8cb11c", backgroundColor: "#f0fdf4" }}
 							>
 								<div
 									className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-									style={{ backgroundColor: "#22C55E" }}
+									style={{ backgroundColor: "#8cb11c" }}
 								>
 									<svg
 										className="w-8 h-8 text-white"
@@ -193,7 +193,7 @@ export default function ContactPage() {
 								</div>
 								<h3
 									className="font-tenor-sans font-bold text-xl mb-2"
-									style={{ color: "#1B6B2A" }}
+									style={{ color: "#3d5a0e" }}
 								>
 									Message Sent!
 								</h3>
@@ -283,7 +283,7 @@ export default function ContactPage() {
 								<button
 									type="submit"
 									className="text-white font-bold py-4 rounded-xl transition-colors text-sm mt-2"
-									style={{ backgroundColor: "#1B6B2A" }}
+									style={{ backgroundColor: "#5a7510" }}
 								>
 									Send Message — Get Free Quote
 								</button>
@@ -295,7 +295,7 @@ export default function ContactPage() {
 					<div className="lg:w-[45%] shrink-0 flex flex-col gap-4">
 						<div
 							className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-white font-bold text-xs uppercase tracking-widest w-fit"
-							style={{ backgroundColor: "#22C55E" }}
+							style={{ backgroundColor: "#8cb11c" }}
 						>
 							FIND US <span>🌲</span>
 						</div>
@@ -303,7 +303,7 @@ export default function ContactPage() {
 							className="font-tenor-sans font-bold"
 							style={{
 								fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-								color: "#1B6B2A",
+								color: "#3d5a0e",
 							}}
 						>
 							Our Location

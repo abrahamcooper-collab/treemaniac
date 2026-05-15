@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
 	{
@@ -37,26 +38,25 @@ const services = [
 ];
 
 export default function ServicesSection() {
+	const ref = useScrollReveal();
+
 	return (
 		<>
 			{/* ── SERVICES ── */}
 			<section
-				className="relative bg-white pt-20"
-				style={{ paddingBottom: "140px" }}
+				ref={ref}
+				className="relative bg-white pt-24 pb-24"
 			>
 				{/* Badge + heading */}
-				<div className="text-center mb-12 px-6">
-					<div
-						className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-5 text-white font-bold text-xs uppercase tracking-widest"
-						style={{ backgroundColor: "#22C55E" }}
-					>
+				<div className="text-center mb-14 px-6">
+					<div className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 mb-6 text-white font-bold text-xs uppercase tracking-[0.12em] badge-shimmer reveal">
 						OUR SERVICES <span>🌲</span>
 					</div>
 					<h2
-						className="font-tenor-sans font-bold text-gray-900"
-						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}
+						className="font-tenor-sans font-bold reveal reveal-d1"
+						style={{ fontSize: "clamp(2.2rem, 5vw, 3.2rem)", color: "#3d5a0e" }}
 					>
-						Our wide variety of tree services
+						Our wide variety of <span className="gradient-text">tree services</span>
 					</h2>
 				</div>
 
@@ -74,24 +74,7 @@ export default function ServicesSection() {
 					</div>
 				</div>
 
-				{/* Wave — absolute at bottom of white section */}
-				<div
-					className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10"
-					style={{ height: "130px" }}
-				>
-					<svg
-						className="wave-svg-anim"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 1440 130"
-						preserveAspectRatio="none"
-						style={{ width: "200%", height: "100%", display: "block" }}
-					>
-						<path
-							fill="white"
-							d="M0,0 L0,65 C120,130 240,0 360,65 C480,130 600,0 720,65 C840,130 960,0 1080,65 C1200,130 1320,0 1440,65 C1560,130 1680,0 1800,65 C1920,130 2040,0 2160,65 C2280,130 2400,0 2520,65 C2640,130 2760,0 2880,65 L2880,0 Z"
-						/>
-					</svg>
-				</div>
+	
 			</section>
 		</>
 	);
@@ -111,10 +94,10 @@ function ServiceCard({
 	return (
 		<Link
 			href={href}
-			className="group block rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border-none relative text-center"
+			className="group block rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-none relative text-center service-card"
 			style={{
 				background:
-					"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+					"linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)",
 			}}
 		>
 			<div className="relative w-full h-48 overflow-hidden">
@@ -137,10 +120,10 @@ function ServiceCard({
 			/>
 
 			<div className="px-6 py-8 relative z-10">
-				<h3 className="font-tenor-sans font-bold text-white mb-4 leading-tight text-xl sm:text-2xl">
+				<h3 className="font-tenor-sans font-bold text-white mb-4 leading-tight" style={{ fontSize: "clamp(1.3rem, 2.5vw, 1.7rem)" }}>
 					{label}
 				</h3>
-				<p className="text-white/90 text-sm leading-relaxed line-clamp-4">
+				<p className="text-white/90 leading-relaxed line-clamp-4" style={{ fontSize: "0.95rem" }}>
 					{desc}
 				</p>
 			</div>

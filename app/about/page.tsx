@@ -56,7 +56,7 @@ export default function AboutPage() {
 				className="relative pt-40 pb-20 px-6"
 				style={{
 					background:
-						"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+						"linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)",
 				}}
 			>
 				<div className="max-w-4xl mx-auto">
@@ -88,7 +88,7 @@ export default function AboutPage() {
 						<Link
 							href="/contact"
 							className="inline-block bg-white font-bold text-sm px-8 py-3 rounded-full transition-colors hover:bg-green-50"
-							style={{ color: "#1B6B2A" }}
+							style={{ color: "#3d5a0e" }}
 						>
 							Get Instant Price
 						</Link>
@@ -97,7 +97,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* Logo + Tagline centered */}
-			<section className="bg-white py-16 px-6 text-center border-b border-gray-100">
+			<section className="py-16 px-6 text-center border-b border-gray-100">
 				<div className="max-w-2xl mx-auto">
 					<Image
 						src="/logo.png"
@@ -108,13 +108,13 @@ export default function AboutPage() {
 					/>
 					<p
 						className="text-xs font-bold uppercase tracking-widest mb-4"
-						style={{ color: "#22C55E" }}
+						style={{ color: "#8cb11c" }}
 					>
 						LOCAL TREE SERVICE EXPERTS IN FRESNO, CA
 					</p>
 					<h2
 						className="font-tenor-sans font-bold mb-5"
-						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#1B6B2A" }}
+						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#3d5a0e" }}
 					>
 						About Tree Maniac Tree Service Inc.
 					</h2>
@@ -132,7 +132,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* Full-width image */}
-			<section className="bg-white pb-0">
+			<section className="pb-0">
 				<div className="max-w-4xl mx-auto px-6">
 					<div
 						className="relative w-full overflow-hidden rounded-2xl"
@@ -149,8 +149,8 @@ export default function AboutPage() {
 			</section>
 
 			{/* About detail — image left, content right */}
-			<section className="bg-white py-20 px-6">
-				<div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+			<section className="py-20 px-6">
+				<div className="max-w-7xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-14 lg:px-14 flex flex-col lg:flex-row items-center gap-16">
 					{/* Left — image collage + stat badge */}
 					<div className="relative w-full lg:w-1/2 shrink-0 flex justify-center py-10 lg:py-0">
 						{/* Decorative background shape */}
@@ -180,7 +180,7 @@ export default function AboutPage() {
 							{/* Stat badge */}
 							<div
 								className="absolute top-8 -right-4 sm:-right-8 rounded-2xl px-5 py-4 text-center shadow-2xl border-4 border-white z-20 flex flex-col items-center justify-center animate-floatUp"
-								style={{ minWidth: "130px", backgroundColor: "#22C55E" }}
+								style={{ minWidth: "130px", backgroundColor: "#8cb11c" }}
 							>
 								<p
 									className="text-white font-black tracking-tighter leading-none mb-1"
@@ -201,7 +201,7 @@ export default function AboutPage() {
 					<div className="w-full lg:w-1/2">
 						<div
 							className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6 text-white font-bold text-xs uppercase tracking-widest"
-							style={{ backgroundColor: "#22C55E" }}
+							style={{ backgroundColor: "#8cb11c" }}
 						>
 							ABOUT TREE MANIAC <span>🌲</span>
 						</div>
@@ -210,7 +210,7 @@ export default function AboutPage() {
 							className="font-bold leading-tight mb-5 font-tenor-sans"
 							style={{
 								fontSize: "clamp(2rem, 4vw, 2.8rem)",
-								color: "#1B6B2A",
+								color: "#3d5a0e",
 								lineHeight: 1.15,
 							}}
 						>
@@ -236,7 +236,7 @@ export default function AboutPage() {
 								>
 									<span
 										className="font-black text-base"
-										style={{ color: "#1B6B2A" }}
+										style={{ color: "#3d5a0e" }}
 									>
 										»
 									</span>
@@ -247,7 +247,7 @@ export default function AboutPage() {
 
 						<div
 							className="border-l-4 pl-5 mb-9 flex flex-col gap-2"
-							style={{ borderColor: "#22C55E" }}
+							style={{ borderColor: "#8cb11c" }}
 						>
 							{services.map((s) => (
 								<span key={s} className="text-gray-600 text-sm font-medium">
@@ -260,7 +260,7 @@ export default function AboutPage() {
 							<a
 								href="tel:+15593695748"
 								className="text-white font-bold px-8 py-4 rounded-full transition-colors shadow-md text-sm"
-								style={{ backgroundColor: "#1B6B2A" }}
+								style={{ backgroundColor: "#5a7510" }}
 							>
 								Call Now
 							</a>
@@ -268,9 +268,9 @@ export default function AboutPage() {
 							<a href="tel:+15593695748" className="flex items-center gap-3">
 								<div
 									className="w-12 h-12 rounded-full flex items-center justify-center shrink-0"
-									style={{ backgroundColor: "#dcfce7" }}
+									style={{ backgroundColor: "#eef5d8" }}
 								>
-									<svg className="w-5 h-5" fill="#22C55E" viewBox="0 0 24 24">
+									<svg className="w-5 h-5" fill="#8cb11c" viewBox="0 0 24 24">
 										<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />
 									</svg>
 								</div>
@@ -291,21 +291,18 @@ export default function AboutPage() {
 			{/* Process Steps */}
 			<section
 				className="py-20 px-6"
-				style={{
-					background: "linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%)",
-				}}
 			>
-				<div className="max-w-5xl mx-auto text-center">
+				<div className="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-14 lg:px-14 text-center">
 					<div
 						className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-4 text-white font-bold text-xs uppercase tracking-widest"
-						style={{ backgroundColor: "#22C55E" }}
+						style={{ backgroundColor: "#8cb11c" }}
 					>
 						OUR WORK PROCESS <span>🌲</span>
 					</div>
 
 					<h2
 						className="font-tenor-sans font-bold mb-4"
-						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#1B6B2A" }}
+						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#3d5a0e" }}
 					>
 						Tree Care Made Simple in 4 Easy Steps
 					</h2>
@@ -353,7 +350,7 @@ export default function AboutPage() {
 									{/* Step number bubble */}
 									<div
 										className="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-sm shadow-lg"
-										style={{ backgroundColor: "#22C55E" }}
+										style={{ backgroundColor: "#8cb11c" }}
 									>
 										{s.num}
 									</div>

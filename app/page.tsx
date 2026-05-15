@@ -11,13 +11,15 @@ import StatsBanner from "@/components/StatsBanner";
 import CtaBanner from "@/components/CtaBanner";
 import LeaveReview from "@/components/LeaveReview";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="bg-[#8cb11c]">
       <Navbar />
       <HeroSection />
       <Announcement />
+      <Image src="/banner_img.png" width={820} height={800} alt="Tree Banner" className="w-full max-w-[80vw] h-auto mx-auto block" />
       <AboutSection />
       <ServicesSection />
       <WhyChooseUs />

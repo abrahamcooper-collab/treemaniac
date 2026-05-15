@@ -5,7 +5,7 @@ const GOOGLE_REVIEW_URL =
 
 export default function LeaveReview() {
 	return (
-		<section className="bg-white py-16 px-6">
+		<section className="py-16 px-6">
 			<div className="relative max-w-4xl mx-auto">
 				{/* Mascot peeking from bottom left */}
 				<div
@@ -25,7 +25,7 @@ export default function LeaveReview() {
 					className="relative overflow-hidden rounded-3xl"
 					style={{
 						background:
-							"linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)",
+							"linear-gradient(135deg, #0D0D0D 0%, #5a7510 60%, #8cb11c 100%)",
 					}}
 				>
 					{/* Decorative circles */}
@@ -99,7 +99,7 @@ export default function LeaveReview() {
 								className="inline-flex items-center gap-3 text-white font-bold px-7 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl group"
 								style={{
 									background:
-										"linear-gradient(135deg, #22C55E 0%, #16a34a 100%)",
+										"linear-gradient(135deg, #8cb11c 0%, #16a34a 100%)",
 									boxShadow: "0 4px 20px rgba(34,197,94,0.35)",
 								}}
 							>

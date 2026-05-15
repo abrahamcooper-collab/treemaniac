@@ -20,7 +20,7 @@ export default function FaqsPage() {
 				className="relative pt-40 pb-20 px-6"
 				style={{
 					background:
-						"linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)",
+						"linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)",
 				}}
 			>
 				<div className="max-w-4xl mx-auto">
@@ -53,7 +53,7 @@ export default function FaqsPage() {
 						<a
 							href="tel:+15593695748"
 							className="inline-block bg-white font-bold text-sm px-8 py-3 rounded-full transition-colors hover:bg-green-50"
-							style={{ color: "#1B6B2A" }}
+							style={{ color: "#3d5a0e" }}
 						>
 							Get Instant Price
 						</a>
@@ -65,13 +65,13 @@ export default function FaqsPage() {
 			<FaqSection />
 
 			{/* Map section */}
-			<section className="bg-white pb-16 px-6">
+			<section className="pb-16 px-6">
 				<div className="max-w-5xl mx-auto">
 					<div className="flex flex-col lg:flex-row gap-0 overflow-hidden rounded-2xl shadow-lg">
 						{/* Left CTA panel */}
 						<div
 							className="lg:w-72 shrink-0 flex flex-col justify-center items-center text-center px-10 py-14"
-							style={{ backgroundColor: "#1B6B2A" }}
+							style={{ backgroundColor: "#5a7510" }}
 						>
 							<div className="mb-6">
 								<svg
@@ -111,7 +111,7 @@ export default function FaqsPage() {
 								<Link
 									href="/contact"
 									className="inline-block text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors"
-									style={{ backgroundColor: "#22C55E" }}
+									style={{ backgroundColor: "#8cb11c" }}
 								>
 									Contact Us
 								</Link>
@@ -125,7 +125,7 @@ export default function FaqsPage() {
 									className="font-tenor-sans font-bold mb-2"
 									style={{
 										fontSize: "clamp(1.4rem, 3vw, 2rem)",
-										color: "#1B6B2A",
+										color: "#3d5a0e",
 									}}
 								>
 									Visit Us in Fresno, CA

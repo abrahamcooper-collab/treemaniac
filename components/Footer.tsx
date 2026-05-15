@@ -155,7 +155,7 @@ export default function Footer() {
 							<a
 								href="tel:+15593695748"
 								className="font-black text-base transition-colors"
-								style={{ color: "#22C55E" }}
+								style={{ color: "#8cb11c" }}
 							>
 								(559) 369-5748
 							</a>

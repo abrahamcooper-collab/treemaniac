@@ -72,7 +72,7 @@ export default function ServiceAreaTemplate({
 						<a
 							href="tel:+15593695748"
 							className="inline-block bg-white font-bold text-sm px-8 py-3 rounded-full transition-colors hover:bg-green-50"
-							style={{ color: "#1B6B2A" }}
+							style={{ color: "#3d5a0e" }}
 						>
 							Get Instant Price
 						</a>
@@ -81,8 +81,8 @@ export default function ServiceAreaTemplate({
 			</section>
 
 			{/* About + image */}
-			<section className="bg-white py-20 px-6">
-				<div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+			<section className="py-20 px-6">
+				<div className="max-w-7xl mx-auto bg-white rounded-[2rem] shadow-lg px-8 py-14 lg:px-14 flex flex-col lg:flex-row items-center gap-16">
 
 					{/* Left arch image */}
 					<div className="relative w-full lg:w-1/2 shrink-0 flex justify-center">
@@ -94,7 +94,7 @@ export default function ServiceAreaTemplate({
 							</div>
 							<div
 								className="absolute bottom-4 right-0 rounded-2xl px-6 py-5 text-center shadow-xl"
-								style={{ minWidth: "130px", backgroundColor: "#22C55E" }}
+								style={{ minWidth: "130px", backgroundColor: "#8cb11c" }}
 							>
 								<p className="text-white font-black leading-none" style={{ fontSize: "3rem" }}>200+</p>
 								<p className="text-white font-semibold text-sm mt-1 leading-snug">Satisfied<br />Customers</p>
@@ -106,13 +106,13 @@ export default function ServiceAreaTemplate({
 					<div className="w-full lg:w-1/2">
 						<div
 							className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6 text-white font-bold text-xs uppercase tracking-widest"
-							style={{ backgroundColor: "#22C55E" }}
+							style={{ backgroundColor: "#8cb11c" }}
 						>
 							ABOUT TREE MANIAC <span>🌲</span>
 						</div>
 						<h2
 							className="font-bold leading-tight mb-5 font-tenor-sans"
-							style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#1B6B2A", lineHeight: 1.15 }}
+							style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#3d5a0e", lineHeight: 1.15 }}
 						>
 							Your trusted tree service experts in {city}, {state}.
 						</h2>
@@ -122,7 +122,7 @@ export default function ServiceAreaTemplate({
 						<ul className="flex flex-col gap-2 mb-7">
 							{bullets.map((b) => (
 								<li key={b} className="flex items-center gap-3 font-medium text-gray-700">
-									<span className="font-black text-base" style={{ color: "#1B6B2A" }}>»</span>
+									<span className="font-black text-base" style={{ color: "#3d5a0e" }}>»</span>
 									{b}
 								</li>
 							))}
@@ -131,13 +131,13 @@ export default function ServiceAreaTemplate({
 							<a
 								href="tel:+15593695748"
 								className="text-white font-bold px-8 py-4 rounded-full transition-colors shadow-md text-sm"
-								style={{ backgroundColor: "#1B6B2A" }}
+								style={{ backgroundColor: "#5a7510" }}
 							>
 								Get Instant Price
 							</a>
 							<a href="tel:+15593695748" className="flex items-center gap-3">
-								<div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#dcfce7" }}>
-									<svg className="w-5 h-5" fill="#22C55E" viewBox="0 0 24 24">
+								<div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: "#eef5d8" }}>
+									<svg className="w-5 h-5" fill="#8cb11c" viewBox="0 0 24 24">
 										<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />
 									</svg>
 								</div>
@@ -152,17 +152,17 @@ export default function ServiceAreaTemplate({
 			</section>
 
 			{/* Services grid */}
-			<section className="py-20 px-6" style={{ background: "linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%)" }}>
+			<section className="py-20 px-6">
 				<div className="max-w-5xl mx-auto text-center mb-12">
 					<div
 						className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-4 text-white font-bold text-xs uppercase tracking-widest"
-						style={{ backgroundColor: "#22C55E" }}
+						style={{ backgroundColor: "#8cb11c" }}
 					>
 						OUR SERVICES <span>🌲</span>
 					</div>
 					<h2
 						className="font-tenor-sans font-bold mb-4"
-						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#1B6B2A" }}
+						style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#3d5a0e" }}
 					>
 						Complete Tree Care for {city}
 					</h2>
@@ -190,13 +190,13 @@ export default function ServiceAreaTemplate({
 			</section>
 
 			{/* Map + nearby areas */}
-			<section className="bg-white py-16 px-6">
+			<section className="py-16 px-6">
 				<div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-0 overflow-hidden rounded-2xl shadow-lg">
 
 					{/* Left CTA panel */}
 					<div
 						className="lg:w-72 shrink-0 flex flex-col justify-center items-center text-center px-10 py-14"
-						style={{ backgroundColor: "#1B6B2A" }}
+						style={{ backgroundColor: "#5a7510" }}
 					>
 						<div className="mb-6">
 							<svg className="w-14 h-14 mx-auto opacity-60" fill="none" stroke="white" strokeWidth={1.2} viewBox="0 0 24 24">
@@ -220,7 +220,7 @@ export default function ServiceAreaTemplate({
 					{/* Right: heading + map */}
 					<div className="flex-1 flex flex-col">
 						<div className="p-8 pb-4">
-							<h2 className="font-tenor-sans font-bold mb-3" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", color: "#1B6B2A" }}>
+							<h2 className="font-tenor-sans font-bold mb-3" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", color: "#3d5a0e" }}>
 								Areas We Serve Near {city}, {state}
 							</h2>
 							<p className="text-gray-500 text-sm leading-relaxed">
@@ -248,10 +248,10 @@ export default function ServiceAreaTemplate({
 
 
 			{/* CTA Banner */}
-			<section className="bg-white pb-16 px-6">
+			<section className="pb-16 px-6">
 				<div
 					className="relative max-w-4xl mx-auto overflow-hidden px-10 py-14 text-center"
-					style={{ borderRadius: "2.5rem", background: "linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)" }}
+					style={{ borderRadius: "2.5rem", background: "linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)" }}
 				>
 					<div className="absolute -top-10 -left-10 w-52 h-52 rounded-full opacity-20" style={{ background: "rgba(255,255,255,0.3)" }} />
 					<div className="absolute -bottom-12 -right-12 w-64 h-64 rounded-full opacity-15" style={{ background: "rgba(255,255,255,0.2)" }} />
