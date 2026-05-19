@@ -92,10 +92,10 @@ export default function GalleryPage() {
 			</section>
 
 			{/* CTA Banner */}
-			<section className="pb-16 px-6">
+			<section className="bg-white pb-16 px-6">
 				<div
 					className="relative max-w-4xl mx-auto overflow-hidden px-10 py-14 text-center"
-					style={{ borderRadius: "2.5rem", background: "linear-gradient(135deg, #8cb11c 0%, #5a7510 50%, #0D0D0D 100%)" }}
+					style={{ borderRadius: "2.5rem", background: "linear-gradient(135deg, #22C55E 0%, #1B6B2A 50%, #0D0D0D 100%)" }}
 				>
 					<div className="absolute -top-10 -left-10 w-52 h-52 rounded-full opacity-20" style={{ background: "rgba(255,255,255,0.3)" }} />
 					<div className="absolute -bottom-12 -right-12 w-64 h-64 rounded-full opacity-15" style={{ background: "rgba(255,255,255,0.2)" }} />

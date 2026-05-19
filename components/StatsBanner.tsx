@@ -51,12 +51,12 @@ export default function StatsBanner() {
 						>
 							<div
 								className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 text-white"
-								style={{ backgroundColor: "#8cb11c" }}
+								style={{ backgroundColor: "#22C55E" }}
 							>
 								{s.icon}
 							</div>
 							<div>
-								<p className="font-black text-2xl leading-none" style={{ color: "#3d5a0e" }}>{s.value}</p>
+								<p className="font-black text-2xl leading-none" style={{ color: "#1B6B2A" }}>{s.value}</p>
 								<p className="text-xs text-gray-500 font-medium mt-0.5">{s.label}</p>
 							</div>
 						</div>

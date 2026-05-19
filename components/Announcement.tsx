@@ -1,22 +1,17 @@
-"use client";
-
 import Image from "next/image";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Announcement() {
-	const ref = useScrollReveal();
-
 	return (
-		<section className="pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6" ref={ref}>
-			<div className="relative max-w-3xl mx-auto reveal-scale">
+		<section className="bg-white pt-10 pb-14 sm:pt-14 sm:pb-16 px-4 sm:px-6">
+			<div className="relative max-w-3xl mx-auto">
 				{/* Exclamation icon — half outside the card */}
-				<div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20">
+				<div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20">
 					<div
-						className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+						className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
 						style={{ backgroundColor: "#dc2626" }}
 					>
 						<svg
-							className="w-7 h-7 text-white"
+							className="w-6 h-6 text-white"
 							fill="currentColor"
 							viewBox="0 0 24 24"
 						>
@@ -25,19 +20,19 @@ export default function Announcement() {
 					</div>
 				</div>
 
-				{/* Main card */}
+				{/* Main card — light green bg with dark text (matching their light cyan card) */}
 				<div
-					className="relative overflow-visible rounded-3xl px-8 sm:px-14 pt-12 pb-10 text-center"
+					className="relative overflow-visible rounded-2xl px-8 sm:px-14 pt-10 pb-8 text-center"
 					style={{
-						background:
-							"linear-gradient(135deg, #2d4508 0%, #3d5a0e 30%, #5a7510 60%, #8cb11c 100%)",
-						boxShadow: "0 8px 40px rgba(90,117,16,0.25)",
+						backgroundColor: "#f0fdf4",
+						border: "1px solid #bbf7d0",
+						boxShadow: "0 4px 30px rgba(34,197,94,0.1)",
 					}}
 				>
 					{/* Badge */}
-					<div className="flex justify-center mb-5">
+					<div className="flex justify-center mb-4">
 						<span
-							className="inline-flex items-center gap-1.5 rounded-full px-5 py-2 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-white"
+							className="inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[10px] sm:text-xs font-extrabold uppercase tracking-widest text-white"
 							style={{ backgroundColor: "#0D0D0D" }}
 						>
 							<span className="relative flex h-2 w-2">
@@ -48,10 +43,10 @@ export default function Announcement() {
 						</span>
 					</div>
 
-					{/* Text */}
+					{/* Text — dark on light bg */}
 					<p
-						className="text-white font-medium leading-relaxed max-w-xl mx-auto"
-						style={{ fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)" }}
+						className="font-medium leading-relaxed max-w-xl mx-auto"
+						style={{ fontSize: "clamp(0.95rem, 2.5vw, 1.25rem)", color: "#1B6B2A" }}
 					>
 						We&apos;re proudly serving Fresno &amp; the Central Valley —
 						providing professional tree removal, trimming, and emergency

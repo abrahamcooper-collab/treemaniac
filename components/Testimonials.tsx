@@ -2,13 +2,13 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Testimonials() {
 	const widgetRef = useRef<HTMLDivElement>(null);
-	const ref = useScrollReveal();
 
 	useEffect(() => {
+		// Trustindex scripts output immediately where they are injected,
+		// so creating an element inside a wrapper is required in React setups.
 		if (widgetRef.current && !widgetRef.current.querySelector("script")) {
 			const script = document.createElement("script");
 			script.src =
@@ -21,10 +21,12 @@ export default function Testimonials() {
 
 	return (
 		<section
-			className="relative py-28 px-6 overflow-hidden"
-			ref={ref}
+			className="relative py-24 px-6 overflow-hidden"
+			style={{
+				backgroundColor: "#f8fdf8",
+			}}
 		>
-			{/* Mascot */}
+			{/* Mascot placed safely at the bottom right behind text to ensure it does not overlap or hide anything */}
 			<div className="absolute -bottom-4 -right-2 sm:-bottom-2 sm:right-10 w-28 sm:w-40 z-0 pointer-events-none opacity-80">
 				<Image
 					src="/mascot.png"
@@ -36,20 +38,23 @@ export default function Testimonials() {
 				/>
 			</div>
 
-			<div className="relative z-10 max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-xl px-8 py-16 lg:px-14 text-center reveal-scale">
+			<div className="relative z-10 max-w-5xl mx-auto text-center">
 				{/* Badge */}
-				<div className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 mb-6 text-white font-bold text-xs uppercase tracking-[0.12em] badge-shimmer">
+				<div
+					className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-5 text-white font-bold text-xs uppercase tracking-widest"
+					style={{ backgroundColor: "#22C55E" }}
+				>
 					TESTIMONIAL <span>🌲</span>
 				</div>
 
 				{/* Heading */}
 				<h2
-					className="font-tenor-sans font-bold mb-4"
-					style={{ fontSize: "clamp(2.2rem, 5vw, 3.2rem)", color: "#3d5a0e" }}
+					className="font-tenor-sans font-bold mb-3"
+					style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#1B6B2A" }}
 				>
-					What our happy clients <span className="gradient-text">say about us?</span>
+					What our happy clients say about us?
 				</h2>
-				<p className="text-gray-500 mb-16 max-w-xl mx-auto leading-relaxed" style={{ fontSize: "1.05rem" }}>
+				<p className="text-gray-500 text-sm mb-16 max-w-xl mx-auto leading-relaxed">
 					Hear from satisfied clients across Fresno, CA who trust{" "}
 					<strong className="text-gray-700">
 						Tree Maniac Tree Service Inc.

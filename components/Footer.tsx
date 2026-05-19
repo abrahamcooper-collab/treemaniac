@@ -24,7 +24,7 @@ const quickLinks = [
 
 export default function Footer() {
 	return (
-		<footer className="bg-green-gradient">
+		<footer style={{ backgroundColor: "#0D0D0D" }}>
 			<div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 					{/* Col 1 — Logo + info + socials */}
@@ -155,7 +155,7 @@ export default function Footer() {
 							<a
 								href="tel:+15593695748"
 								className="font-black text-base transition-colors"
-								style={{ color: "#8cb11c" }}
+								style={{ color: "#22C55E" }}
 							>
 								(559) 369-5748
 							</a>
