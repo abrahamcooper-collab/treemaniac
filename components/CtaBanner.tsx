@@ -31,37 +31,42 @@ export default function CtaBanner() {
 					/>
 				</motion.div>
 				
-				{/* Card — light green gradient bg with dark text (matching their light cyan CTA) */}
+				{/* Card */}
 				<div
-					className="relative overflow-hidden px-10 py-14 text-center"
+					className="relative overflow-hidden px-10 py-14 text-center rounded-3xl"
 					style={{
-						borderRadius: "2.5rem",
-						background: "linear-gradient(135deg, #dcfce7 0%, #f0fdf4 50%, #bbf7d0 100%)",
-						border: "1px solid #bbf7d0",
+						background: "linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)",
 					}}
 				>
-				{/* Decorative blobs */}
-				<div
-					className="absolute -top-10 -left-10 w-52 h-52 rounded-full opacity-30"
-					style={{ background: "rgba(34,197,94,0.15)" }}
-				/>
-				<div
-					className="absolute -bottom-12 -right-12 w-64 h-64 rounded-full opacity-20"
-					style={{ background: "rgba(27,107,42,0.1)" }}
-				/>
+					{/* Decorative blobs */}
+					<div
+						className="absolute -top-16 -left-16 w-56 h-56 rounded-full"
+						style={{ background: "rgba(34,197,94,0.12)" }}
+					/>
+					<div
+						className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full"
+						style={{ background: "rgba(255,255,255,0.04)" }}
+					/>
+					<div
+						className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full"
+						style={{ background: "rgba(34,197,94,0.06)" }}
+					/>
 
 				<div className="relative z-10">
 					<h2
 						className="font-tenor-sans font-bold mb-8 leading-tight"
-						style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#1B6B2A" }}
+						style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#ffffff" }}
 					>
 						Transform your property with<br />Tree Maniac Tree Service Inc.!
 					</h2>
 
 					<a
 						href="tel:+15593695748"
-						className="inline-flex items-center gap-3 text-white font-bold px-6 py-4 rounded-full shadow-lg group transition-all"
-						style={{ backgroundColor: "#1B6B2A" }}
+						className="inline-flex items-center gap-3 text-white font-bold px-7 py-4 rounded-full shadow-lg group transition-all duration-300 hover:scale-105"
+						style={{
+							background: "linear-gradient(135deg, #22C55E 0%, #16a34a 100%)",
+							boxShadow: "0 4px 20px rgba(34,197,94,0.35)",
+						}}
 					>
 						<div
 							className="w-9 h-9 rounded-full flex items-center justify-center transition-transform group-hover:scale-110"
@@ -71,7 +76,7 @@ export default function CtaBanner() {
 								<path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.45 2.33.7 3.58.7a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.25 2.45.7 3.57a1 1 0 01-.25 1.02l-2.33 2.2z" />
 							</svg>
 						</div>
-						<div className="text-left leading-tight group-hover:text-green-300 transition-colors">
+						<div className="text-left leading-tight group-hover:text-green-100 transition-colors">
 							<span className="text-xs uppercase tracking-widest opacity-75 block">GET INSTANT PRICE</span>
 							<span className="text-base font-black">(559) 369-5748</span>
 						</div>

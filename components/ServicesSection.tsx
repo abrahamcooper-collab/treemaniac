@@ -137,16 +137,25 @@ function ServiceCard({
 	desc: string;
 }) {
 	return (
-		<motion.div variants={itemVariants}>
+		<motion.div variants={itemVariants} className="h-full">
 			<Link
 				href={href}
-				className="group block rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border text-center h-full"
+				className="group block rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 text-center h-full relative"
 				style={{
-					backgroundColor: "#f0fdf4",
-					borderColor: "#dcfce7",
+					background: "linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)",
 				}}
 			>
-				<div className="relative w-full h-48 overflow-hidden">
+				{/* Decorative blobs */}
+				<div
+					className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full opacity-30 pointer-events-none transition-transform group-hover:scale-150 duration-700"
+					style={{ background: "rgba(34,197,94,0.15)" }}
+				/>
+				<div
+					className="absolute top-1/2 -left-10 w-32 h-32 rounded-full opacity-10 pointer-events-none transition-transform group-hover:scale-125 duration-700"
+					style={{ background: "rgba(255,255,255,0.1)" }}
+				/>
+
+				<div className="relative w-full h-48 overflow-hidden z-20">
 					<Image
 						src={img}
 						alt={label}
@@ -156,14 +165,14 @@ function ServiceCard({
 					/>
 				</div>
 
-				<div className="px-6 py-8 relative z-10 flex flex-col h-[calc(100%-12rem)]">
+				<div className="px-6 py-8 relative z-20 flex flex-col h-[calc(100%-12rem)]">
 					<h3
-						className="font-tenor-sans font-bold mb-4 leading-tight text-xl sm:text-2xl"
-						style={{ color: "#1B6B2A" }}
+						className="font-tenor-sans font-bold mb-4 leading-tight text-xl sm:text-2xl transition-colors"
+						style={{ color: "#ffffff" }}
 					>
 						{label}
 					</h3>
-					<p className="text-gray-600 text-sm leading-relaxed line-clamp-4">
+					<p className="text-white/80 text-sm leading-relaxed line-clamp-4">
 						{desc}
 					</p>
 				</div>

@@ -34,24 +34,36 @@ export default function SkillsStats() {
 					whileInView={{ opacity: 1, x: 0 }}
 					viewport={{ once: true, margin: "-100px" }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
-					className="lg:w-[38%] shrink-0 rounded-3xl flex flex-col justify-center items-center text-center px-10 py-14"
-					style={{ backgroundColor: "#0D0D0D" }}
+					className="lg:w-[38%] shrink-0 rounded-3xl flex flex-col justify-center items-center text-center px-10 py-14 relative overflow-hidden"
+					style={{ background: "linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)" }}
 				>
-					<p
-						className="font-tenor-sans font-bold text-white leading-snug mb-6"
-						style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)" }}
-					>
-						Tree Maniac Tree Service Inc.<br />
-						<span style={{ color: "#22C55E" }}>Fresno, CA</span> and surrounding areas.
-					</p>
-					<div className="w-16 border-t mb-6" style={{ borderColor: "rgba(255,255,255,0.15)" }} />
-					<p className="text-white/50 text-sm mb-2">Get an Instant Quote</p>
-					<a
-						href="tel:+15593695748"
-						className="font-bold text-white text-lg transition-colors hover:text-green-400 group"
-					>
-						<span className="inline-block transition-transform group-hover:scale-110">(559) 369-5748</span>
-					</a>
+					{/* Decorative blobs */}
+					<div
+						className="absolute -top-16 -left-16 w-56 h-56 rounded-full"
+						style={{ background: "rgba(34,197,94,0.12)" }}
+					/>
+					<div
+						className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full"
+						style={{ background: "rgba(255,255,255,0.04)" }}
+					/>
+
+					<div className="relative z-10">
+						<p
+							className="font-tenor-sans font-bold text-white leading-snug mb-6"
+							style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)" }}
+						>
+							Tree Maniac Tree Service Inc.<br />
+							<span style={{ color: "#dcfce7" }}>Fresno, CA</span> and surrounding areas.
+						</p>
+						<div className="w-16 border-t mb-6 mx-auto" style={{ borderColor: "rgba(255,255,255,0.15)" }} />
+						<p className="text-white/70 text-sm mb-2 font-medium">Get an Instant Quote</p>
+						<a
+							href="tel:+15593695748"
+							className="font-bold text-white text-lg transition-colors hover:text-green-200 group inline-block"
+						>
+							<span className="inline-block transition-transform group-hover:scale-110">(559) 369-5748</span>
+						</a>
+					</div>
 				</motion.div>
 
 				{/* RIGHT — skill bars */}

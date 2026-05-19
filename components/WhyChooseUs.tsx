@@ -111,12 +111,26 @@ export default function WhyChooseUs() {
 				{/* Bottom: green strip left + dark content card right */}
 				<div className="flex flex-col lg:flex-row">
 					<div className="lg:w-[42%] shrink-0" style={{ backgroundColor: "#1B6B2A", minHeight: "60px" }} />
-					<div className="flex-1 px-10 py-10" style={{ backgroundColor: "#0D0D0D" }}>
+					<div 
+						className="flex-1 px-10 py-10 relative overflow-hidden" 
+						style={{ background: "linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)" }}
+					>
+						{/* Decorative blobs */}
+						<div
+							className="absolute -top-16 -left-16 w-56 h-56 rounded-full pointer-events-none"
+							style={{ background: "rgba(34,197,94,0.12)" }}
+						/>
+						<div
+							className="absolute -bottom-20 -right-20 w-72 h-72 rounded-full pointer-events-none"
+							style={{ background: "rgba(255,255,255,0.04)" }}
+						/>
+
 						<motion.div
 							key={tab.title}
 							initial={{ opacity: 0, x: 20 }}
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.5 }}
+							className="relative z-10"
 						>
 							<h3
 								className="font-tenor-sans font-bold text-white mb-4 leading-snug"
@@ -124,8 +138,8 @@ export default function WhyChooseUs() {
 							>
 								{tab.title}
 							</h3>
-							<p className="text-white/60 text-sm leading-relaxed mb-6 max-w-lg">
-								<span className="font-semibold" style={{ color: "#22C55E" }}>Tree Maniac Tree Service Inc.</span>{" "}
+							<p className="text-white/80 text-sm leading-relaxed mb-6 max-w-lg">
+								<span className="font-semibold" style={{ color: "#dcfce7" }}>Tree Maniac Tree Service Inc.</span>{" "}
 								{tab.body}
 							</p>
 							<ul className="flex flex-col gap-3">
@@ -136,7 +150,7 @@ export default function WhyChooseUs() {
 												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
 											</svg>
 										</span>
-										<span className="text-white text-sm font-medium">{b}</span>
+										<span className="text-white font-medium text-sm">{b}</span>
 									</li>
 								))}
 							</ul>

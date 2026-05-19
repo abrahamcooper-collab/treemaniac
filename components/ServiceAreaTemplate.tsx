@@ -172,19 +172,47 @@ export default function ServiceAreaTemplate({
 				</div>
 				<div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{allServices.map((s) => (
-						<Link
-							key={s.href}
-							href={s.href}
-							className="group block rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300"
-						>
-							<div className="relative w-full overflow-hidden" style={{ height: "180px" }}>
-								<Image src={s.img} alt={s.label} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
-							</div>
-							<div className="p-5" style={{ backgroundColor: "#f0fdf4" }}>
-								<h3 className="font-tenor-sans font-bold text-gray-900 mb-2">{s.label}</h3>
-								<p className="text-gray-500 text-xs leading-relaxed">{s.desc}</p>
-							</div>
-						</Link>
+						<div key={s.href} className="h-full">
+							<Link
+								href={s.href}
+								className="group block rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 text-center h-full relative"
+								style={{
+									background: "linear-gradient(135deg, #0D0D0D 0%, #1B6B2A 60%, #22C55E 100%)",
+								}}
+							>
+								{/* Decorative blobs */}
+								<div
+									className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full opacity-30 pointer-events-none transition-transform group-hover:scale-150 duration-700"
+									style={{ background: "rgba(34,197,94,0.15)" }}
+								/>
+								<div
+									className="absolute top-1/2 -left-10 w-32 h-32 rounded-full opacity-10 pointer-events-none transition-transform group-hover:scale-125 duration-700"
+									style={{ background: "rgba(255,255,255,0.1)" }}
+								/>
+
+								<div className="relative w-full overflow-hidden z-20" style={{ height: "180px" }}>
+									<Image 
+										src={s.img} 
+										alt={s.label} 
+										fill 
+										sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" 
+										className="object-cover group-hover:scale-105 transition-transform duration-500" 
+									/>
+								</div>
+
+								<div className="p-6 relative z-20 flex flex-col h-[calc(100%-180px)] text-center">
+									<h3 
+										className="font-tenor-sans font-bold mb-3 transition-colors text-lg"
+										style={{ color: "#ffffff" }}
+									>
+										{s.label}
+									</h3>
+									<p className="text-white/80 text-xs leading-relaxed">
+										{s.desc}
+									</p>
+								</div>
+							</Link>
+						</div>
 					))}
 				</div>
 			</section>
