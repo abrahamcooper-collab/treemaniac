@@ -20,13 +20,13 @@ const services = [
 	{
 		label: "Tree Trimming & Pruning",
 		href: "/services/tree-trimming",
-		img: "https://images.unsplash.com/photo-1669065054992-3151b15aab08?q=80&w=857&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		img: "https://unsplash.com/photos/a-man-in-a-yellow-helmet-is-climbing-up-a-tree-eaf5cOAt66g",
 		desc: "Transform your trees with professional trimming and pruning services across Fresno. From shaping to deadwood removal, we keep your trees healthy and your property looking sharp.",
 	},
 	{
 		label: "Stump Grinding",
-		href: "https://images.unsplash.com/photo-1617143520628-86934f404d06?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		img: "/services/stump-trimming/IMG_5892.JPEG",
+		href: "/services/stump-grinding",
+		img: "https://unsplash.com/photos/man-in-black-jacket-and-blue-denim-jeans-holding-orange-and-black-power-tool-Whc7yVd45wA",
 		desc: "Tree Maniac specializes in fast, efficient stump grinding in Fresno and beyond. We restore lawn health and eliminate tripping hazards with professional-grade equipment.",
 	},
 	{
