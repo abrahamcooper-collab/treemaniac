@@ -8,6 +8,7 @@ import FaqSection from "@/components/FaqSection";
 import SkillsStats from "@/components/SkillsStats";
 import Testimonials from "@/components/Testimonials";
 import StatsBanner from "@/components/StatsBanner";
+import ServiceAreasSection from "@/components/ServiceAreasSection";
 import CtaBanner from "@/components/CtaBanner";
 import LeaveReview from "@/components/LeaveReview";
 import Footer from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function HomePage() {
       <SkillsStats />
       <Testimonials />
       <StatsBanner />
+      <ServiceAreasSection />
       <CtaBanner />
       <LeaveReview />
       <Footer />
