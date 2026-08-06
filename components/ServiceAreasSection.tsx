@@ -127,8 +127,6 @@ export default function ServiceAreasSection() {
 						<motion.div key={area.name} variants={itemVariants}>
 							<Link
 								href={area.href}
-								scroll={true}
-								onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }}
 								className="service-area-btn group flex items-center gap-3 rounded-full px-6 py-3.5 sm:px-7 sm:py-4 font-bold text-sm sm:text-base transition-all duration-300 w-full"
 								style={{
 									backgroundColor: "rgba(255,255,255,0.08)",

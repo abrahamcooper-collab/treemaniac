@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeaveReview from "@/components/LeaveReview";
 import FaqSection from "@/components/FaqSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const allServices = [
 	{ label: "Tree Removal", href: "/services/tree-removal", img: "/services/tree-removal/65524423604__842AC5D4-4616-4B70-A5FA-89C9903EF790.JPEG", desc: "Safe, professional tree removal for residential and commercial properties." },
@@ -41,6 +42,7 @@ export default function ServiceAreaTemplate({
 }: ServiceAreaProps) {
 	return (
 		<>
+			<ScrollToTop />
 			<Navbar />
 
 			{/* Hero */}
