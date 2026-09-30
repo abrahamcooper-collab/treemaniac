@@ -64,16 +64,18 @@ export default function VideoShowcase() {
 					}}
 				>
 					<div className="relative rounded-[calc(1rem-3px)] sm:rounded-[calc(1.5rem-3px)] overflow-hidden bg-black">
-						<video
+					<video
 							ref={videoRef}
-							src="/video.mov"
 							muted
 							loop
 							playsInline
 							preload="metadata"
 							className="w-full block"
 							style={{ maxHeight: "80vh", objectFit: "contain" }}
-						/>
+						>
+							<source src="/video.mp4" type="video/mp4" />
+							<source src="/video.mov" type="video/quicktime" />
+						</video>
 					</div>
 				</motion.div>
 			</div>
