@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import Announcement from "@/components/Announcement";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import VideoShowcase from "@/components/VideoShowcase";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FaqSection from "@/components/FaqSection";
 import SkillsStats from "@/components/SkillsStats";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <HeroSection />
       <Announcement />
       <AboutSection />
+      <VideoShowcase />
       <ServicesSection />
       <WhyChooseUs />
       <FaqSection />
