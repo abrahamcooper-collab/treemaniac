@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import ServiceDetailSections, { type ServiceDetailSection } from "@/components/ServiceDetailSections";
 import StormAtmosphere from "@/components/StormAtmosphere";
+import StormPromoPopup from "@/components/StormPromoPopup";
 
 const IMAGE_DIR = "/services/rain-and-storm-damage";
 
@@ -98,6 +99,11 @@ export default function RainAndStormDamagePage() {
 				description="Central Valley storms bring saturated soil, gusting winds, and heavy limbs. Here's how we keep your trees — and everything under them — safe."
 				sections={STORM_SERVICES}
 				backdrop={<StormAtmosphere intensity="light" />}
+			/>
+			<StormPromoPopup
+				schedule={{ type: "oncePerSession", delayMs: 4000 }}
+				primaryAction={{ label: "Call (559) 369-5748", href: "tel:+15593695748" }}
+				secondaryAction={{ label: "Request a Free Quote", href: "/contact" }}
 			/>
 		</ServicePageTemplate>
 	);

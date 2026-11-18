@@ -1,0 +1,58 @@
+.dialog {
+	margin: auto;
+	padding: 0;
+	border: none;
+	background: transparent;
+	width: min(28rem, calc(100vw - 2rem));
+	max-height: calc(100dvh - 2rem);
+	overflow-y: auto;
+}
+
+.dialog[open] {
+	animation: popIn 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dialog::backdrop {
+	background: rgba(3, 12, 13, 0.7);
+	backdrop-filter: blur(4px);
+}
+
+.dialog[open]::backdrop {
+	animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes popIn {
+	from {
+		opacity: 0;
+		transform: translateY(24px) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+}
+
+/* Slot meter fills once on open to draw the eye to "few slots left". */
+.meterFill {
+	animation: fill 1.4s 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fill {
+	from {
+		transform: scaleX(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.dialog[open],
+	.dialog[open]::backdrop,
+	.meterFill {
+		animation: none;
+	}
+}
