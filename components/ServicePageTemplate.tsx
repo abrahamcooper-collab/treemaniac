@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -8,6 +9,7 @@ import FaqSection from "@/components/FaqSection";
 const allServices = [
 	{ label: "Tree Removal", href: "/services/tree-removal" },
 	{ label: "Emergency Tree Service", href: "/services/emergency-tree-service" },
+	{ label: "Rain & Storm Damage", href: "/services/rain-and-storm-damage" },
 	{ label: "Tree Trimming & Pruning", href: "/services/tree-trimming" },
 	{ label: "Stump Grinding", href: "/services/stump-grinding" },
 	{ label: "Lot & Land Clearing", href: "/services/lot-clearing" },
@@ -23,6 +25,10 @@ export interface ServicePageProps {
 	intro: string;
 	importantNotes?: string[];
 	whyChoosePoints: { heading: string; body: string }[];
+	/** Decorative layer drawn over the hero background, beneath its text. */
+	heroAtmosphere?: ReactNode;
+	/** Extra page-specific sections rendered between the main content and the FAQ. */
+	children?: ReactNode;
 	keywords?: string[];
 }
 
@@ -34,6 +40,8 @@ export default function ServicePageTemplate({
 	intro,
 	importantNotes,
 	whyChoosePoints,
+	heroAtmosphere,
+	children,
 }: ServicePageProps) {
 	return (
 		<>
@@ -50,6 +58,7 @@ export default function ServicePageTemplate({
 				/>
 				{/* Dark overlay */}
 				<div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/50" />
+				{heroAtmosphere}
 				<div className="max-w-4xl mx-auto relative z-10">
 					<div
 						className="inline-flex items-center gap-2 rounded-full px-5 py-2 mb-6 text-sm font-medium"
@@ -217,6 +226,8 @@ export default function ServicePageTemplate({
 					</div>
 				</div>
 			</section>
+
+			{children}
 
 			<FaqSection />
 

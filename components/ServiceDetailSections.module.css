@@ -1,0 +1,24 @@
+/* Gentle wind sway for storm-tone photos, pivoting from the bottom like a tree. */
+.sway {
+	transform-origin: 50% 100%;
+	animation: sway 7s ease-in-out infinite alternate;
+}
+
+.sway:nth-child(2) {
+	animation-delay: -3.5s;
+}
+
+@keyframes sway {
+	from {
+		transform: rotate(-0.8deg);
+	}
+	to {
+		transform: rotate(0.8deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sway {
+		animation: none;
+	}
+}

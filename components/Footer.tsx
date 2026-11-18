@@ -4,6 +4,7 @@ import Image from "next/image";
 const serviceLinks = [
 	{ label: "Tree Removal", href: "/services/tree-removal" },
 	{ label: "Emergency Tree Service", href: "/services/emergency-tree-service" },
+	{ label: "Rain & Storm Damage", href: "/services/rain-and-storm-damage" },
 	{ label: "Tree Trimming & Pruning", href: "/services/tree-trimming" },
 	{ label: "Stump Grinding", href: "/services/stump-grinding" },
 	{ label: "Lot & Land Clearing", href: "/services/lot-clearing" },
